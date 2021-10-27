@@ -1,0 +1,11 @@
+<div class="d-flex flex-column align-items-end bg-primary pt-4 ps-5">
+
+    <h1 class="mb-4 text-light fw-bold">To-Do App!</h1>
+
+    <p class="mb-4 text-light fw-bold">Add New To-Do</p>
+
+    <input #input [(ngModel)]="userInput" type="text" placeholder="Enter new task" class="border border-0 rounded-3 mb-4  px-4 py-2 w-100">
+
+    <button [disabled]="userInput === ''" (click)="sendTaskToParent(input.value)" class="btn border border-light rounded-3 text-light fw-bold px-4">Add</button>
+
+</div>

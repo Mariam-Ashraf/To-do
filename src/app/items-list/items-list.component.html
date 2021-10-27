@@ -1,0 +1,12 @@
+<h2 class="pt-5 pb-3 text-center">Let's get some work done!</h2>
+<div class="line"></div>
+
+<div class="border border-primary px-5 py-3 my-5 mx-5">
+    <div *ngFor="let task of list" class="d-flex flex-row align-items-baseline w-50 h-50 mb-3">
+        <input type="checkbox" id="btncheck" (click)="ischecked($event)">
+        <label class="fs-4 ms-3 text-danger" for="btncheck">{{ task }}</label>
+        <div>
+            <button (click)="deleteTask(task)" class="btn bg-primary border-0 rounded-3 text-light fw-bold ms-3 px-3 ">Delete</button>
+        </div>
+    </div>
+</div>
